@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		EC8F350C1E171E3800E5DB8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F350B1E171E3800E5DB8F /* AppDelegate.swift */; };
-		EC8F350E1E171E3800E5DB8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F350D1E171E3800E5DB8F /* ViewController.swift */; };
-		EC8F35111E171E3800E5DB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8F350F1E171E3800E5DB8F /* Main.storyboard */; };
 		EC8F35131E171E3800E5DB8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8F35121E171E3800E5DB8F /* Assets.xcassets */; };
 		EC8F35161E171E3800E5DB8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8F35141E171E3800E5DB8F /* LaunchScreen.storyboard */; };
 		EC8F35211E171E3800E5DB8F /* ASTools00Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F35201E171E3800E5DB8F /* ASTools00Tests.swift */; };
 		EC8F352C1E171E3900E5DB8F /* ASTools00UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F352B1E171E3900E5DB8F /* ASTools00UITests.swift */; };
+		EC8F35411E17F62500E5DB8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F35401E17F62500E5DB8F /* ViewController.swift */; };
+		EC8F35441E17F68200E5DB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8F35421E17F68200E5DB8F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 /* Begin PBXFileReference section */
 		EC8F35081E171E3800E5DB8F /* ASTools00.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASTools00.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8F350B1E171E3800E5DB8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC8F350D1E171E3800E5DB8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC8F35101E171E3800E5DB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC8F35121E171E3800E5DB8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8F35151E171E3800E5DB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8F35171E171E3800E5DB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		EC8F35271E171E3900E5DB8F /* ASTools00UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASTools00UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8F352B1E171E3900E5DB8F /* ASTools00UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTools00UITests.swift; sourceTree = "<group>"; };
 		EC8F352D1E171E3900E5DB8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8F35401E17F62500E5DB8F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC8F35431E17F68200E5DB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				EC8F350B1E171E3800E5DB8F /* AppDelegate.swift */,
-				EC8F350D1E171E3800E5DB8F /* ViewController.swift */,
-				EC8F350F1E171E3800E5DB8F /* Main.storyboard */,
+				EC8F35401E17F62500E5DB8F /* ViewController.swift */,
+				EC8F35421E17F68200E5DB8F /* Main.storyboard */,
 				EC8F35121E171E3800E5DB8F /* Assets.xcassets */,
 				EC8F35141E171E3800E5DB8F /* LaunchScreen.storyboard */,
 				EC8F35171E171E3800E5DB8F /* Info.plist */,
@@ -232,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8F35441E17F68200E5DB8F /* Main.storyboard in Resources */,
 				EC8F35161E171E3800E5DB8F /* LaunchScreen.storyboard in Resources */,
 				EC8F35131E171E3800E5DB8F /* Assets.xcassets in Resources */,
-				EC8F35111E171E3800E5DB8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8F350E1E171E3800E5DB8F /* ViewController.swift in Sources */,
+				EC8F35411E17F62500E5DB8F /* ViewController.swift in Sources */,
 				EC8F350C1E171E3800E5DB8F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,20 +296,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC8F350F1E171E3800E5DB8F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC8F35101E171E3800E5DB8F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC8F35141E171E3800E5DB8F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EC8F35151E171E3800E5DB8F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EC8F35421E17F68200E5DB8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC8F35431E17F68200E5DB8F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -503,6 +503,7 @@
 				EC8F35321E171E3900E5DB8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC8F35331E171E3900E5DB8F /* Build configuration list for PBXNativeTarget "ASTools00Tests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				EC8F35351E171E3900E5DB8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC8F35361E171E3900E5DB8F /* Build configuration list for PBXNativeTarget "ASTools00UITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +521,7 @@
 				EC8F35381E171E3900E5DB8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
